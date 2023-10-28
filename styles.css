@@ -1,0 +1,824 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+@media only screen and (max-width: 390px) {
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: 0;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'inter', sans-serif;
+}
+
+body {
+    color: var;
+    background: white;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 167px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: all 0.5s;
+}
+
+.navbar-scrolled {
+    background-color: #9C42C7;
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+
+.navbar .nav img {
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.568), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
+}
+
+
+.navbar a {
+    position: relative;
+    font-size: 19px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+nav ul li a{
+    text-transform: uppercase;
+}
+
+.nav a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: white;
+    transition: .3s ease;
+}
+
+.nav a:hover::before {
+    width: 100%;
+}
+.checkbtn {
+    font-size: 30px;
+    color: #ffffff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+
+.header {
+    text-align: justify;
+    width: 100%;
+    padding: 200px 270px;
+    background: url(img/header.jpg) 0 0 no-repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.356) 0%, rgba(0, 0, 0, 0.795) 99%, rgba(0, 0, 0, 0.65) 100%);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+}
+
+.header a{
+    text-decoration: none;
+    color: white;
+}
+.header h1 {
+    font-size: 40px;
+    color: white;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.header p {
+    padding: 0;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    color: white;
+}
+.header .btn {
+    background-color: #9C42C7;
+    color: white;
+    border-radius: 2%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+#information {
+    overflow: hidden; 
+}
+
+.content-img {
+    float: left; 
+    margin-right: 20px; 
+}
+
+.content-text {
+    float: right; 
+    width: 60%;
+    
+}
+
+.content-img {
+    display: flex;
+}
+
+.content-img img{
+    width: 680px;
+    height: 690px;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.contentvision h2 {
+    font-size: 40px;
+    color: #9C42C7;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.075);
+    font-weight: 800;
+    text-decoration: none;
+    margin-left: 54px;
+    margin-bottom: 15px;
+}
+.contentvision {
+    
+    margin-left: 200px;
+    margin-top: 400px;
+
+}
+.contentvision .card-text {
+    margin-left: 60px;
+
+}
+
+.card-title {
+    text-align: center;
+    padding-right: 100px;
+}
+
+.f-gym {
+    text-align: justify;
+    width: 100%;
+    padding: 200px 270px;
+    background: url(img/club.jpg) 0 0 no-repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.349) 0%, rgba(0, 0, 0, 0.795) 99%, rgba(0, 0, 0, 0.65) 100%);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+}
+
+.f-gym .facilities {
+    color: white;
+}
+
+.f-gym h2 {
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.meet {
+    text-align: justify;
+    width: 100%;
+    padding: 200px 270px;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+}
+
+.meet h2 {
+    font-size: 40px;
+    color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.075);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.personal {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.pt {
+    display: flex;
+}
+
+.person {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.person img {
+    width: 320px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+.person h3 {
+    margin-top: 10px;
+    text-align: start;
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+}
+
+.person p {
+    margin-top: 5px;
+    text-align: start;
+}
+
+.group-fitness {
+    text-align: justify;
+    width: 100%;
+    padding: 200px 270px;
+    background: url(img/groupfitness.jpg) 0 0 no-repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.349) 0%, rgba(0, 0, 0, 0.795) 99%, rgba(0, 0, 0, 0.65) 100%);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+}
+
+.group-fitness .classes {
+    color: white;
+}
+
+.group-fitness h2 {
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.Personalized-Approach {
+    text-align: justify;
+    width: 100%;
+    padding: 200px 270px;
+}
+
+.Personalized-Approach .card-img {
+    width: 556px;
+    height: 526px;
+    flex-shrink: 0;
+    background-size: 650px;
+    float: left;
+    margin-right: 300px;
+}
+
+.Personalized-Approach .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #9C42C7;
+    border-radius: 50%;
+}
+
+.Personalized-Approach .btn {
+    background-color: #9C42C7;
+    color: white;
+    border-radius: 2%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.Approach {
+    padding-top: 150px;
+}
+
+.Approach h2 {
+    font-size: 35px;
+    color: hsl(0, 0%, 0%);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.Community-Support {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 9rem;
+}
+
+.img-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.Community-Support h2 {
+    font-size: 35px;
+    color: hsl(0, 0%, 0%);
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-align: justify;    
+}
+
+.Support {
+    padding-left: 250px;
+}
+
+
+
+
+.membership {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 4rem;
+}
+
+.membership .benefits-image {
+    width: 880px;
+    height: 590px;
+    border-radius: 5px;
+}
+
+.membership .benefits {
+    text-align: justify;
+    padding-top: 90px;
+    flex-shrink: 0;
+    margin-right: 0px;
+
+
+}
+
+
+.membership h2 {
+    font-size: 40px;
+    color: hsl(0, 0%, 0%);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.membership h6 {
+    font-size: 20px;
+    color: hsl(0, 0%, 0%);
+    font-weight: 500;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.terms {
+    padding-top: 170px;
+}
+
+.health {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    padding-top: 120px;
+}
+
+.health-img img {
+    width: 840px;
+    height: 550px;
+    border-radius: 5px;
+}
+.health-text {
+    padding-left: 250px;
+    
+}
+.health-text h3 {
+    font-size: 35px;
+    color: hsl(152, 80%, 41%);
+    font-weight: 800;
+    text-decoration: none;
+}
+.jointoday {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    padding-top: 120px;
+}
+
+.jointoday .btn  {
+    background-color: #9C42C7;
+    color: white;
+    border-radius: 2%;
+    font-size: 20px;
+    font-weight: 600;
+}
+.jointoday a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.jointoday img {
+    border-radius: 5px;
+    max-width:100%;
+    height:auto;
+}
+.jointoday-text {
+    padding-left: 250px;
+    
+}
+.jointoday-text h3 {
+    font-size: 30px;
+    color: #000000;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.joinus {
+    text-align: center;
+    padding-top: 150px;
+    width: 100%;
+    padding: 200px 270px;
+    background: url(img/membership.png) 0 0 no-repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.349) 0%, rgba(0, 0, 0, 0.795) 99%, rgba(0, 0, 0, 0.65) 100%);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    display: block;
+
+}
+.joinus p {
+    color: #ffffff;
+}
+.cardmem {
+    padding: 10px;
+}
+.joinus h2{
+    font-size: 40px;
+    color: #9C42C7;
+    font-weight: 800;
+    text-decoration: none;
+}
+.cardmem .card {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 18rem;bottom: 250px;
+}
+.tabletag {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.card-body {
+    text-align: center;
+}
+.card-body .btn{
+    margin-top: 300px;
+
+}
+.card-body2 .btn {
+    margin-bottom: 30px;
+}
+.card-body .card-title {
+    text-align: center;
+    font-size: 25px;
+    color: hsl(0, 0%, 0%);
+    font-weight: 800;
+    text-decoration: none;
+    padding-right: 0px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+}
+.body2 .btn {
+    background-color: #ffbb56;
+    color: rgb(255, 255, 255);
+    border-radius: 2%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-body2 {
+    text-align: center;
+}
+.card-body2 .card-title {
+    text-align: center;
+    font-size: 25px;
+    color: hsl(0, 0%, 0%);
+    font-weight: 800;
+    text-decoration: none;
+    padding-right: 0px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.card-body2 .btn {
+    background-color: #9C42C7;
+    color: rgb(255, 255, 255);
+    border-radius: 2%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-body3 {
+    text-align: center;
+}
+.card-body3 .card-title {
+    text-align: center;
+    font-size: 25px;
+    color: hsl(0, 0%, 0%);
+    font-weight: 800;
+    text-decoration: none;
+    padding-right: 0px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.card-body3 .btn {
+    background-color: #151416b6;
+    color: rgb(255, 255, 255);
+    border-radius: 2%;
+    font-size: 20px;
+    font-weight: 600;
+}
+.subscribe {
+    text-align: center;
+    width: 100%;
+    padding: 200px 270px;
+    background: url(img/groupfitness.jpg) 0 0 no-repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.349) 0%, rgba(0, 0, 0, 0.795) 99%, rgba(0, 0, 0, 0.65) 100%);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+}
+
+.subscribe .today {
+    color: white;
+}
+
+.subscribe h2 {
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 800;
+    text-decoration: none;
+}
+.subscribe .row {
+    text-align: center;
+}
+.forms {
+    padding: 9px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.subscribe .btn {
+    background-color: #9C42C7;
+    color: white;
+    border-radius: 2%;
+    font-size: 20px;
+    font-weight: 600;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.footer {
+    background: #9C42C7;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 20px 60px 50px;
+    margin-top: 80px;
+}
+.footer .footer-content {
+    width: 30%;
+}
+
+.home-nav a {
+    color: white;
+}
+.footer h6 {
+    font-weight: 600;
+}
+.footer .home-nav {
+    color: white;
+    font: normal 20px 'cookie', cursive;
+    margin: 20px 0 60px;
+}
+.footer .home-nav a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer .contactemail {
+    color: rgb(214, 214, 214);
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    
+}
+.footer .contactemail a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+.footer .office-hours {
+    color: rgb(214, 214, 214);
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+.footer .connect {
+    color: rgb(214, 214, 214);
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+.footer .icons a{
+    display: inline-block;
+    color: white;
+    font: normal 20px 'cookie', cursive;
+    text-decoration: none;
+    justify-content: space-between;
+}
+.footer .contactfoot {
+    color: rgb(214, 214, 214);
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 3;
+    align-items: flex-end;
+ }
+  
+.footer .others {
+    margin-left: 0px;
+    margin-right: 0px;
+    border: 30px;
+}
+
+
+.aboutus {
+    text-align: justify;
+    width: 100%;
+    padding: 200px 270px;
+    background: url(img/club.jpg) 0 0 no-repeat, linear-gradient(to bottom, rgba(0, 0, 0, 0.349) 0%, rgba(0, 0, 0, 0.795) 99%, rgba(0, 0, 0, 0.65) 100%);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    padding-top: 500px;
+
+}
+
+.aboutus .uscont {
+    color: white;
+}
+
+.aboutus h2 {
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 800;
+    text-decoration: none;
+}
+.aboutus B {
+    color: #9C42C7
+}
+
+.class {
+    display: grid;
+    padding-top: 250px;
+    text-align: center;
+}
+
+.classes h3 {
+    font-size: 35px;
+    color: hsl(293, 80%, 41%);
+    font-weight: 800;
+    text-decoration: none;
+    padding-bottom: 30px;
+}
+.form-row {
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.deckcard {
+    display: grid;
+    padding-top: 23px;
+}
+.deckcard .btn {
+    margin-top: 20px;
+    background-color: #9C42C7;
+    color: white;
+    border-radius: 2%;
+    font-size: 20px;
+    font-weight: 600;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.deckcard .card {
+    margin: 20px;
+}
+.deckcard .card p {
+    text-align: start;
+}
+.deckcard .card h5 {
+    text-align: start;
+}
+
+.form-row .btn {
+        background-color: #9C42C7;
+        color: rgb(255, 255, 255);
+        border-radius: 1%;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 22px;
+        margin-bottom: 22px;
+        margin-left: 10px;
+        border-radius: 10px;
+}
+.contactyou h2{
+    text-align: center;
+    padding-top: 200px;
+    font-size: 35px;
+    color: hsl(293, 80%, 41%);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.box-area {
+    width: 600;
+    height: 450;
+}
+.contactyou h2 {
+    margin: 50px;
+}
+.contactme h4 {
+    text-align: center;
+}
+.contactme {
+    text-align: center;
+    padding-left: 150px;
+}
+
+.right-box p {
+    margin-left: 20px;
+
+} 
+
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
+
+  @media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+  }
+  @media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #9C42C7;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    .nav a:hover, a.active {
+        background: none;
+        color: rgb(255, 255, 255);
+    }
+    #check:checked + ul {
+        left: 0;
+    }
+}
