@@ -87,6 +87,12 @@ header a:hover::before {
 }
 
 /*------front---*/
+.col {
+    margin: auto;
+    width: 60%;
+    margin: 0 0 0 420px;
+    padding: 10px;
+}
 .home-text {
     text-align: justify;
     width: 100%;
