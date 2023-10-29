@@ -813,9 +813,12 @@ header a:hover::before {
     header nav ul li a {
         margin: 5px 0;
     }
-    .col-xs-12 {
-        text-align: start;
+      .col {
+        width: 300px;
+        margin: auto;
+        text-align: center;
  } 
+}
 }
 
 @media only screen and (max-width: 768px){
