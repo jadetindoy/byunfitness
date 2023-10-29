@@ -87,12 +87,7 @@ header a:hover::before {
 }
 
 /*------front---*/
-.col {
-    margin: auto;
-    width: 60%;
-    margin: 0 0 0 420px;
-    padding: 10px;
-}
+
 .home-text {
     text-align: justify;
     width: 100%;
@@ -101,6 +96,12 @@ header a:hover::before {
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
+}
+.col {
+    margin: auto;
+    width: 60%;
+    margin: 0 0 0 420px;
+    padding: 10px;
 }
 
 .home-text a{
