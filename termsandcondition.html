@@ -11,19 +11,24 @@
     <title>BYUN FITNESS</title>
 </head>
 <body>
-    <nav class="navbar navbar-scrolled">
-       <label for="logo"><img src="img/BYUN LOGO 2.png" width="320" height="140" alt=""></label> 
-        <ul class="nav">
-           <li><a class="active" href="index.html">Home</a></li> 
-            <li><a href="aboutus.html">About us</a></li>
-            <li><a href="classes.html">Classes</a></li>
-            <li><a href="membership.html">Membership</a></li>
-            <li><a href="contactus.html">Contact us</a></li>
-        </ul> 
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn"><i class="ri-menu-line"></i></label>
-    </nav>
-<section>
+    <header class="navbar-scrolled">
+        <div class="logo"><img src="img/BYUN LOGO 2.png" width="320" height="140" alt=""></div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li> 
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
 </body>
 <section class="container-fluid">
     <div class="row align-items-start terms">
