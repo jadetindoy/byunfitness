@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles.css">
     <title>BYUN FITNESS</title>
+    <link rel="icon" class="ri-trophy-fill" href="trophy-fill.png">
 </head>
 <body>
-       <header class="navbar-scrolled">
+    <header class="navbar-scrolled">
         <div class="logo"><img src="img/BYUN LOGO 2.png" width="320" height="140" alt=""></div>
         <input type="checkbox" id="nav_check" hidden>
         <nav>
@@ -29,7 +29,8 @@
             <div></div>
         </label>
     </header>
-<div class="container-fluid home-text">
+<section>
+    <div class="container-fluid home-text">
     <nav class="row text-sm-left">  
         <div class="col">
         <h1>BYUN FITNESS</h1>
@@ -44,20 +45,21 @@
             </form>
         </div>
         </nav>  
-        </header>
 </div>
-</div>
-    
-<section class="vision" id="information">
-    <div class="content-img">
-        <img src="img/Untitled design.png" alt="" class="image-fluid">
-        <div class="contentvision">  <h2 class="card-title">Vision and Commitment</h2>
+</section>
+
+<section class="container-fluid vision" id="information" style="padding-left: 230px;">
+    <div class="row content-img">
+        <div class="col-sm"><img src="img/Untitled design.png" alt="" class="image-fluid">
+        </div>
+        <div class="col-sm contentvision">  <h2 class="card-title">Vision and Commitment</h2>
             <p class="card-text"> We're committed to guiding you to achieve <br>
                         your fitness goals, fostering a community 
                         that supports your journey.</p></div>
     </div>
 </section>
-
+<br>
+<!--Facilities and Equipment-->
 <section class="f-gym">
     <div class="facilities">
     <h2>
@@ -71,7 +73,8 @@
     </p>
 </div>
 </section>
-<section class="meet">
+<!--Trainors-->
+<section class="trainers">
     <div class="trainors">
         <h2>Meet our Trainers</h2>
         <p>Meet our team of seasoned trainers, dedicated to unleashing your full potential. <br>
@@ -79,36 +82,38 @@
     </div>
     <br>
     <br>
-<div class="personal">
-    <div class="container">
-        <div class="pt">
-            <div class="person">
-                <img src="img/train1 (1).png" alt="" width="320" height="489" class="rounded mx-auto d-block">
-                <h3>Selena Cruz</h3>
-                <p> 10 Years of Trainors and golden olympics medalist of weigtlifting </p>
-            </div>
-
-            <div class="person">
-                <img src="img/train2 (2).png" alt="" width="320" height="489" class="rounded mx-auto d-block">
-                <h3>Juan Magno</h3>
-                <p> 15 years of trainor and Blackbelts Muay Thai </p>
-            </div>
-
-            <div class="person">
-                <img src="img/train 3.png" alt="" width="320" height="489" class="rounded mx-auto d-block">
-                <h3>Kate Delos Santos </h3>
-                <p> 8 years of trainor and Yoga instractor </p>
-            </div>
-
-            <div class="person">
-                <img src="img/train 4.png" alt="" width="320" height="489" class="rounded mx-auto d-block">
-                <h3>Hong Dae-yong</h3>
-                <p> 8 years of trainor and Blackbelts Taekwondo </p>
-            </div>
+    <div class="card-deck float">
+        <div class="card col-md-3" style="height: fit-content; width: 270px;">
+          <img src="img/train1 (1).png" class="card-img-top" alt="Selena Cruz">
+          <div class="position-absolute bottom-0 text-light w-100">
+            <h2 class="card-title">SELENA <br> CRUZ</h2>
+          </div>
         </div>
+            <div class="card col-md-3" style="height: fit-content; width: 270px;">
+              <img src="img/train2 (2).png" class="card-img-top" alt="Juan Magno">
+              <div class="position-absolute bottom-0 text-light w-100">
+                <h2 class="card-title">JUAN <br>MAGNO</h2>
+              </div>
+            </div>
+            <div class="card col-md-3" style="height: fit-content; width: 270px;">
+                <div class="card" >
+                  <img src="img/train 3.png" class="card-img-top" alt="...">
+                  <div class="position-absolute bottom-0 text-light w-100">
+                    <h2 class="card-title">KATE <br> SANTOS</h2>
+                  </div>
+                </div>
+        </div>
+        <div class="card col-md-3" style="height: fit-content; width: 270px;">
+            <div class="card" >
+                <img src="img/train 4.png" class="card-img-top" alt="...">
+              <div class="position-absolute bottom-0 text-light w-100">
+                <h2 class="card-title">Hong <br> Dae-yong</h2>
+              </div>
+            </div>
     </div>
 </div>
 </section>
+<!--Group Fitness-->
 <section class="group-fitness">
     <div class="classes">
         <h2>GROUP FITNESS CLASSES</h2>
@@ -119,6 +124,8 @@
             achieving your fitness goals. Your adventure begins here!</p>
     </div>
 </section>
+<!--Personalized Approach-->
+
 <section class="Personalized-Approach">
     <div class="card-img">
         <img src="img/pt.png" alt="pt">
@@ -133,6 +140,7 @@
         <button href="#" class="btn">Consult Now</button>
     </div>
 </section>
+<!--Community-->
 <section class="Community-Support">
     <div class="Support">
         <h2>
@@ -148,6 +156,9 @@
         <img src="img/group.png" alt="">
     </div>
 </section>
+<!--Benfits-->
+
+
 <section class="membership">
     <div class="memimage">
         <img src="img/benefdits.jpg" alt="" class="benefits-image">
@@ -185,6 +196,7 @@
     </div>
 </section>
 
+<!--Health Benefits-->
 
 <section>
     <div class="health" id="health">
@@ -220,6 +232,9 @@
         <br>
         <br>
         <br>
+
+        <!--Subscribe Benefits-->
+
 <section class="subscribe">
     <div class="today">
         <h2>Join the  BYUN FITNESS <br>
@@ -229,11 +244,14 @@
     </div>
    <form action="">
     <input type="email" placeholder="Email" class="forms">
-    <button class="btn" type="submit">Send</button>
+    <button class="btn" type="submit">Subscribe</button>
    </form>
     </div>
 </section>
 <section>
+
+    <!--Footer-->
+
 <footer class="footer">
     <div class="footer-content">
         <div class="home-nav">
@@ -246,7 +264,7 @@
     </div>
 
 <div class="others">
-    <div class="row">
+    <div class="container-fluid d-flex justify-content-center">
         <div class="col-sm-12 col-md-4">
     <div class="contactemail">
         <p>Membership Inquiries: <br>
@@ -286,7 +304,7 @@
 </footer>
 </section>
 <script>
-    const navEl = document.querySelector('.navbar');
+    const navEl = document.querySelector('.nav_check');
     
     window.addEventListener('scroll', () => {
         if (window.scrollY >= 56) {
@@ -296,6 +314,7 @@
         }
     });
 </script>
+
 
 </body>
 </html>
