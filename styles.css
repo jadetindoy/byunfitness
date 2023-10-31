@@ -23,6 +23,7 @@ body {
     background: white;
 }
 
+
 header {
     position: fixed;
     top: 0;
@@ -97,13 +98,13 @@ header a:hover::before {
     background-size: cover;
     background-position: center;
 }
-.col {
+
+.home-text .col {
     margin: auto;
     width: 60%;
-    margin: 0 0 0 420px;
+    margin: 0 0 0 250px;
     padding: 10px;
 }
-
 .home-text a{
     text-decoration: none;
     color: white;
@@ -132,13 +133,14 @@ header a:hover::before {
 
 
 
-#information {
-    overflow: hidden; 
-}
 
+#information {
+    margin-top: 70px;
+}
 .content-img {
     float: left; 
     margin-right: 20px; 
+    margin-left: 120px;
 }
 
 .content-text {
@@ -153,9 +155,13 @@ header a:hover::before {
 
 .content-img img{
     width: 680px;
-    height: 690px;
-    margin-left: 200px;
-    margin-top: 50px;
+    height: 590px;
+   margin: auto;
+}
+.contentvision {
+    text-align: start;
+    padding: 300px 0 0 0;
+
 }
 .contentvision h2 {
     font-size: 40px;
@@ -163,26 +169,11 @@ header a:hover::before {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.075);
     font-weight: 800;
     text-decoration: none;
-    margin-left: 54px;
-    margin-bottom: 15px;
+    margin: auto;
 }
-.contentvision {
-    
-    margin-left: 200px;
-    margin-top: 400px;
-
-}
-.contentvision .card-text {
-    margin-left: 60px;
-
-}
-
-.card-title {
-    text-align: center;
-    padding-right: 100px;
-}
-
 .f-gym {
+    position: relative;
+    margin-top: 650px;
     text-align: justify;
     width: 100%;
     padding: 200px 270px;
@@ -204,7 +195,11 @@ header a:hover::before {
     text-decoration: none;
 }
 
-.meet {
+
+.card-deck{
+    display: flex;
+}
+.trainers {
     text-align: justify;
     width: 100%;
     padding: 200px 270px;
@@ -212,21 +207,35 @@ header a:hover::before {
     background-size: cover;
     background-position: center;
 }
-
-.meet h2 {
+.trainers .card-deck{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.trainers h2 {
     font-size: 40px;
-    color: black;
+    line-height: 33px;
+    color: rgb(0, 0, 0);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.075);
     font-weight: 800;
-    text-decoration: none;
+}
+
+.card-deck h2 {
+    font-size: 40px;
+    line-height: 33px;
+    margin-left: 7px;
+    color: rgba(255, 255, 255, 0.562);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.075);
+    font-weight: 800;
 }
 
 .personal {
     display: flex;
-    justify-content: center;
     text-align: center;
 }
 
+.card-img-top {
+    margin: auto;
+}
 .pt {
     display: flex;
 }
@@ -236,7 +245,7 @@ header a:hover::before {
     text-align: center;
 }
 
-.person img {
+.person img{
     width: 320px;
     height: auto;
     display: block;
@@ -256,7 +265,6 @@ header a:hover::before {
     margin-top: 5px;
     text-align: start;
 }
-
 .group-fitness {
     text-align: justify;
     width: 100%;
@@ -278,6 +286,8 @@ header a:hover::before {
     font-weight: 800;
     text-decoration: none;
 }
+
+
 
 .Personalized-Approach {
     text-align: justify;
@@ -791,11 +801,79 @@ header a:hover::before {
   }
 
  
-
+/*----Media Query-----*/
 @media only screen and (max-width: 900px) {
     header {
-        padding: 0 30px
+        padding: 0 30px;
     }
+    .hamburger {
+        display: block;
+    }
+    header nav {
+        position: absolute;
+        left: 0;
+        top: 120px;
+        width: 100%;
+        background: #9C42C7;
+        padding: 25px;
+        display: none;
+        transition: 0.3s;
+    }
+    
+    header #nav_check:checked ~ nav{
+        display: block;
+    }
+    header nav ul {
+        display: block;
+    }
+    header nav ul li a {
+        margin: 5px 0;
+    }
+    .home-text .col {
+        width: 300px;
+        margin: auto;
+        text-align: center;
+    } 
+    .content-img img {
+        width: 390px;
+        height: 270px;
+        margin: auto;
+        text-align: center;
+    }
+    .contentvision {
+        padding: 80px 0 0 0;
+        margin: auto;
+        text-align: center;
+    }
+    .f-gym {
+        margin-top: 400px;
+        margin: auto;
+        margin-top: 590px;
+    }
+    .Personalized-Approach {
+        text-align: center;
+    }
+    .Personalized-Approach .Approach {
+        padding-top: 100px;
+    }
+    .img-card img {
+        display: none;
+    }
+    .Community-Support{
+        background-image: url(img/group.png);
+        display: block;
+        background-position: center;
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-size: 550px;
+        color: #000000;
+        text-align: center;
+    }
+    .Community-Support h2{
+        color: #9C42C7;
+
+    }
+
 }
 @media only screen and (max-width: 700px){
     .hamburger {
@@ -820,15 +898,72 @@ header a:hover::before {
     header nav ul li a {
         margin: 5px 0;
     }
-      .col {
+    .home-text .col {
         width: 300px;
         margin: auto;
         text-align: center;
  } 
+    .content-img img {
+        width: 390px;
+        height: 270px;
+        margin: auto;
 }
+    .f-gym {
+        margin-top: 600px;
+        text-align: center;
+        margin: auto;
+        font-size: small;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 1200px;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1024px){
+    .hamburger {
+        display: block;
+    }
+    header nav {
+        position: absolute;
+        left: 0;
+        top: 120px;
+        width: 100%;
+        background: #9C42C7;
+        padding: 25px;
+        display: none;
+        transition: 0.3s;
+    }
+    header #nav_check:checked ~ nav{
+        display: block;
+    }
+    header nav ul {
+        display: block;
+    }
+    header nav ul li a {
+        margin: 5px 0;
+        font-size: ;
+    }
+    .home-text .col {
+        width: 300px;
+        margin: auto;
+        text-align: center;
+ } 
+    .content-img img {
+        width: 390px;
+        height: 270px;
+        margin: auto;
+    }
+    .contentvision {
+        padding: 80px 0 0 0;
+        margin: auto;
+    }
+    .f-gym {
+        margin-top: 400px;
+        margin: auto;
+        margin-top: 590px;
+    }
+}
+
+@media (max-width: 414px){
     .hamburger {
         display: block;
     }
@@ -851,5 +986,30 @@ header a:hover::before {
     header nav ul li a {
         margin: 5px 0;
     }
+    .home-text .col {
+        width: 300px;
+        margin: auto;
+ } 
+    .trainers {
+        margin: auto;
+        padding: 12px 12px 12px 12px;
+    }
+    .content-img img {
+        width: 390px;
+        height: 270px;
+        margin: auto;
+ }
+    .card img{
+        width: 120px;
+        height: 200px;
+    }
+    .card-deck h2 {
+        font-size: 10px;
+    }
+    .card-deck {
+        position: static;
+        margin: auto;
+        padding-left: 12px;
+    }
 }
-
+ 
