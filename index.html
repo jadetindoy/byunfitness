@@ -304,7 +304,15 @@
 </footer>
 </section>
 <script>
- 
+   const navEl = document.querySelector('.nav_check');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= 56) {
+            navEl.classList.add('navbar-scrolled');
+        } else {
+            navEl.classList.remove('navbar-scrolled');
+        }
+    });
 </script>
 
 
