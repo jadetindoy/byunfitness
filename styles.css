@@ -606,15 +606,27 @@ header a:hover::before {
     background: #9C42C7;
     box-sizing: border-box;
     width: 100%;
-    text-align: left;
+    text-align: center;
     font: bold 16px sans-serif;
     padding: 50px 20px 60px 50px;
     margin-top: 80px;
 }
 .footer .footer-content {
-    width: 30%;
+    width: 70%;
+    text-align: center;
 }
-
+.footer p {
+    font-size: 15px;
+}
+.others .privacy a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.others .privacy  {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+}
 .home-nav a {
     color: white;
 }
@@ -678,8 +690,6 @@ header a:hover::before {
     margin-right: 0px;
     border: 30px;
 }
-
-
 .aboutus {
     text-align: justify;
     width: 100%;
